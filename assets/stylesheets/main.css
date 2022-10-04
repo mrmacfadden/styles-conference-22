@@ -142,11 +142,32 @@ table {
   box-sizing: border-box;
 }
 
-.container {
+.container,
+.grid {
   margin: 0 auto;
+  width: 960px;
+}
+.container {
   padding-left: 30px;
   padding-right: 30px;
-  width: 960px;
+}
+
+.col-1-3 {
+  width: 33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*
@@ -217,4 +238,17 @@ p {
   border-top: 4px solid #648880;
   padding: 40px 0 22px 0;
   float: left;
+}
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer small {
+  float: left;
+}
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
 }
